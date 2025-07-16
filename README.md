@@ -43,6 +43,9 @@ The pipeline proceeds in the following steps:
 - All pipeline events, messages, and timestamps are recorded.
 - **Output:** `pipeline_log.txt`
 
+### 6. **XODR generation**
+- XODR generation was created automatically, It's actually made manually.
+
 ---
 
 ## 📦 Output Summary
