@@ -1,0 +1,140 @@
+<?xml version="1.0" standalone="yes"?>
+<OpenDRIVE>
+	<header revMajor="1" revMinor="4" name="SimpleRoad" version="1.00" date="2025-07-07" vendor="AAI"/>
+
+	<!-- Straight Road -->
+	<road name="2020firstpatch" length="90" id="1" junction="-1">
+		
+		<link>
+			<successor elementType="road" elementId="2"/>
+		</link>
+
+		<planView>
+			<geometry s="0.0" x="0.0" y="-400.0" hdg="0.0" length="90">
+				<line/>
+			</geometry>
+		</planView>
+
+		<lanes>
+			<laneSection s="0.0">
+				<center>
+					<lane id="0" type="none" level="false"/>
+				</center>
+				<right>
+					<lane id="-1" type="driving" level="false">
+						<width sOffset="0.0" a="3.0" b="0.0" c="0.0" d="0.0"/>
+						<roadMark sOffset="0.0" type="solid" weight="standard" color="red" width="0.15"/>
+					</lane>
+				</right>
+			</laneSection>
+		</lanes>
+	</road>
+
+	<!-- Curved Road -->
+	<road name="2017firstpatch" length="290" id="2" junction="-1">
+		<link>
+			<predecessor elementType="road" elementId="1"/>
+			<successor elementType="road" elementId="3"/>
+		</link>
+
+		<planView>
+			<geometry s="0.0" x="90.0" y="-400.0" hdg="0.0" length="290.0">
+				<arc curvature="-0.002"/>
+			</geometry>
+		</planView>
+
+		<lanes>
+			<laneSection s="0.0">
+				<center>
+					<lane id="0" type="none" level="false"/>
+				</center>
+				<right>
+					<lane id="-1" type="driving" level="false">
+						<width sOffset="0.0" a="3.0" b="0.0" c="0.0" d="0.0"/>
+						<roadMark sOffset="0.0" type="solid" weight="standard" color="yellow" width="0.15"/>
+					</lane>
+				</right>
+			</laneSection>
+		</lanes>
+	</road>
+
+	<!-- Final Straight Road Connected to Curve -->
+	<road name="2020secondpatch" length="600" id="3" junction="-1">
+		<link>
+			<predecessor elementType="road" elementId="2"/>
+		</link>
+
+		<planView>
+			<!-- Adjusted geometry to connect with end of curve -->
+			<geometry s="0.0" x="362.0" y="-482.0" hdg="0.50" length="600">
+				<line/>
+			</geometry>
+		</planView>
+
+		<lanes>
+			<laneSection s="0.0">
+				<center>
+					<lane id="0" type="none" level="false"/>
+				</center>
+				<right>
+					<lane id="-1" type="driving" level="false">
+						<width sOffset="0.0" a="3.0" b="0.0" c="0.0" d="0.0"/>
+						<roadMark sOffset="0.0" type="solid" weight="standard" color="red" width="0.15"/>
+					</lane>
+				</right>
+			</laneSection>
+		</lanes>
+	</road>
+	<road name="2020thirdpatch" length="320" id="4" junction="-1">
+		<link>
+			<predecessor elementType="road" elementId="2"/>
+		</link>
+
+		<planView>
+			<!-- Adjusted geometry to connect with end of curve -->
+			<geometry s="0.0" x="362.0" y="-482.0" hdg="-0.50" length="90">
+				<line/>
+			</geometry>
+		</planView>
+
+		<lanes>
+			<laneSection s="0.0">
+				<center>
+					<lane id="0" type="none" level="false"/>
+				</center>
+				<right>
+					<lane id="-1" type="driving" level="false">
+						<width sOffset="0.0" a="3.0" b="0.0" c="0.0" d="0.0"/>
+						<roadMark sOffset="0.0" type="solid" weight="standard" color="red" width="0.15"/>
+					</lane>
+				</right>
+			</laneSection>
+		</lanes>
+	</road>
+	<road name="2017secondpatch" length="446" id="5" junction="-1">
+		<link>
+			<successor elementType="road" elementId="4"/>
+		</link>
+
+		<planView>
+			<!-- Adjusted geometry to connect with end of curve -->
+			<geometry s="0.0" x="640.91" y="-637.22" hdg="1.15" length="446">
+				<line/>
+			</geometry>
+		</planView>
+
+		<lanes>
+			<laneSection s="0.0">
+				<center>
+					<lane id="0" type="none" level="false"/>
+				</center>
+				<right>
+					<lane id="-1" type="driving" level="false">
+						<width sOffset="0.0" a="3.0" b="0.0" c="0.0" d="0.0"/>
+						<roadMark sOffset="0.0" type="solid" weight="standard" color="red" width="0.15"/>
+					</lane>
+				</right>
+			</laneSection>
+		</lanes>
+	</road>
+</OpenDRIVE>
